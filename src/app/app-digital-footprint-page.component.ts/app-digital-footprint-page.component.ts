@@ -3,11 +3,11 @@ import { SidenavService } from '../side-nav.service';
 import { MatSidenav } from '@angular/material';
 
 @Component({
-    selector: 'app-me-page',
-    templateUrl: './app-me-page.component.html',
-    styleUrls: ['./app-me-page.component.sass']
+    selector: 'app-digital-footprint-page',
+    templateUrl: './app-digital-footprint-page.component.html',
+    styleUrls: ['./app-digital-footprint-page.component.sass']
 })
-export class AppMePageComponent implements OnInit {
+export class AppDigitalFootprintComponent implements OnInit {
     @ViewChild('sidenav') public sidenav: MatSidenav;
 
     constructor(
@@ -16,9 +16,5 @@ export class AppMePageComponent implements OnInit {
 
     ngOnInit() {
         this.sidenavService.setSidenav(this.sidenav);
-    }
-
-    onOpenEasteregg() {
-        console.log('yay');
     }
 }

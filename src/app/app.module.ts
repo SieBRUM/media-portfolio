@@ -12,6 +12,10 @@ import { AppMePageComponent } from './app-me-page-component/app-me-page.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SidenavService } from './side-nav.service';
+import { MatComponnetsModule } from './mat-components.module';
+import { AppDigitalFootprintComponent } from './app-digital-footprint-page.component.ts/app-digital-footprint-page.component';
+import { AppADayInALifePageComponent } from './app-a-day-in-a-life-page-component/app-a-day-in-a-life-page.component';
 
 
 
@@ -20,19 +24,20 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppComponent,
     AppMenuBarComponent,
     AppHomePageComponent,
-    AppMePageComponent
+    AppMePageComponent,
+    AppDigitalFootprintComponent,
+    AppADayInALifePageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatTabsModule,
-    MatCommonModule,
-    MatSidenavModule,
+    MatComponnetsModule,
     BrowserAnimationsModule,
-    MatGridListModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [
+    SidenavService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

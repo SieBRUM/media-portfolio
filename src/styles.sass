@@ -1,2 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css'
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css'
+@import "~@angular/material/theming";
+
+$primaryPalette: mat-palette($mat-indigo);
+$accentPalette:  mat-palette($mat-pink, A200, A100, A400);
+
+// the default warn palette is red, so use that if the theme doesn't define one
+$warnPalette:    mat-palette($mat-red);
+
+body
+    font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif
+.side-nav
+  width: 25%
+.info-panel
+  .mat-expansion-panel-header-title
+    flex-basis: 0
+  .mat-expansion-panel-header-description
+    flex-basis: 0
+    justify-content: space-between
+    align-items: center
+.mat-expanded
+  .info-header
+    background: mat-color($accentPalette)

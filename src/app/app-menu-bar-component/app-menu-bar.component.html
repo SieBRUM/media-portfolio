@@ -1,8 +1,19 @@
-<nav mat-tab-nav-bar>
+<nav mat-tab-nav-bar color="primary">
+  <button mat-mini-fab color="primary" size="small" (click)="toggleSideNav()" *ngIf="sidenavService.getSidenav() !== null">
+    <mat-icon>
+      {{getIcon()}}
+    </mat-icon>
+  </button>
   <a mat-tab-link routerLink="/home" [active]="isActive('/home')">
     Home
   </a>
   <a mat-tab-link routerLink="/me" [active]="isActive('/me')">
     Ik
+  </a>
+  <a mat-tab-link routerLink="projects/digitalfootprint" [active]="isActive('/projects/digitalfootprint')">
+    Digital Footprint
+  </a>
+  <a mat-tab-link routerLink="projects/adayinthelife" [active]="isActive('/projects/adayinthelife')">
+    A day in the life
   </a>
 </nav>
