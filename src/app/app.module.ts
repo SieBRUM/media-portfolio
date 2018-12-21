@@ -14,8 +14,13 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavService } from './side-nav.service';
 import { MatComponnetsModule } from './mat-components.module';
-import { AppDigitalFootprintComponent } from './app-digital-footprint-page.component.ts/app-digital-footprint-page.component';
+import { AppDigitalFootprintComponent } from './app-digital-footprint-page.component/app-digital-footprint-page.component';
 import { AppADayInALifePageComponent } from './app-a-day-in-a-life-page-component/app-a-day-in-a-life-page.component';
+import { AppNoLogoPageComponent } from './app-no-logo-page-component/app-no-logo-page.component';
+import { AppBigDataPageComponent } from './app-big-data-page-component/app-big-data-page.component';
+import { AppWeAreTheRobotsPageComponent } from './app-we-are-the-robots-page-component/app-we-are-the-robots-page.component';
+import { AppUserExperiencePageComponent } from './app-user-experience-page-component/app-user-experience-page.component';
+import { AppPortfolioPageComponent } from './app-portfolio-page-component/app-portfolio-page.component';
 
 
 
@@ -26,7 +31,12 @@ import { AppADayInALifePageComponent } from './app-a-day-in-a-life-page-componen
     AppHomePageComponent,
     AppMePageComponent,
     AppDigitalFootprintComponent,
-    AppADayInALifePageComponent
+    AppADayInALifePageComponent,
+    AppNoLogoPageComponent,
+    AppBigDataPageComponent,
+    AppWeAreTheRobotsPageComponent,
+    AppUserExperiencePageComponent,
+    AppPortfolioPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,19 +1,97 @@
-<nav mat-tab-nav-bar color="primary">
+<!-- <nav mat-tab-nav-bar color="primary">
+  <a mat-tab-link routerLink="projects/bigdata" [active]="isActive('/projects/bigdata')">
+    Big data
+  </a>
+  <a mat-tab-link routerLink="projects/wearetherobots" [active]="isActive('/projects/wearetherobots')">
+    We are the robots
+  </a>
+  <a mat-tab-link routerLink="projects/userexperience" [active]="isActive('/projects/userexperience')">
+    User experience
+  </a>
+  <a mat-tab-link routerLink="projects/portfolio" [active]="isActive('/projects/portfolio')">
+    Portfolio
+  </a>
+</nav> -->
+
+<nav mat-tab-nav-bar style="width: 100%;">
   <button mat-mini-fab color="primary" size="small" (click)="toggleSideNav()" *ngIf="sidenavService.getSidenav() !== null">
     <mat-icon>
       {{getIcon()}}
     </mat-icon>
   </button>
-  <a mat-tab-link routerLink="/home" [active]="isActive('/home')">
-    Home
-  </a>
-  <a mat-tab-link routerLink="/me" [active]="isActive('/me')">
-    Ik
-  </a>
-  <a mat-tab-link routerLink="projects/digitalfootprint" [active]="isActive('/projects/digitalfootprint')">
-    Digital Footprint
-  </a>
-  <a mat-tab-link routerLink="projects/adayinthelife" [active]="isActive('/projects/adayinthelife')">
-    A day in the life
-  </a>
+  <mat-tab-group style="width: 98%;">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/home" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/home')">
+          Home
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/me" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/me')">
+          Ik
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/projects/digitalfootprint" [routerLinkActiveOptions]="{exact: true}"
+          routerLinkActive="isActive('/projects/digitalfootprint')">
+          Digital Footprint
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/projects/adayinthelife" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/adayinthelife')">
+          A day in the life
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/projects/nologo" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/nologo')">
+          No logo
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/projects/bigdata" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/bigdata')">
+          Big data
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/projects/wearetherobots" [routerLinkActiveOptions]="{exact: true}"
+          routerLinkActive="isActive('/projects/wearetherobots')">
+          We are the robots
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/projects/userexperience" [routerLinkActiveOptions]="{exact: true}"
+          routerLinkActive="isActive('/projects/userexperience')">
+          User experience
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/projects/portfolio" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/portfolio')">
+          Portfolio
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/projects/portfolio" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/portfolio')">
+          Portfolio
+        </a>
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
 </nav>
