@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import {
     MatTabsModule, MatCommonModule,
-    MatSidenavModule, MatGridListModule, MatButtonModule, MatIconModule, MatFormFieldControl, MatFormFieldModule
+    MatSidenavModule, MatGridListModule, MatButtonModule, MatIconModule, MatFormFieldControl, MatFormFieldModule, MatSnackBarModule
 } from '@angular/material';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDividerModule } from '@angular/material/divider';
@@ -17,7 +17,8 @@ import { MatDividerModule } from '@angular/material/divider';
         MatIconModule,
         MatDividerModule,
         MatExpansionModule,
-        MatFormFieldModule
+        MatFormFieldModule,
+        MatSnackBarModule
     ],
     exports: [
         MatTabsModule,
@@ -28,7 +29,8 @@ import { MatDividerModule } from '@angular/material/divider';
         MatIconModule,
         MatDividerModule,
         MatExpansionModule,
-        MatFormFieldModule
+        MatFormFieldModule,
+        MatSnackBarModule
     ]
 })
 export class MatComponnetsModule { }

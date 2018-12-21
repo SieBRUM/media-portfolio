@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SidenavService } from '../side-nav.service';
-import { MatSidenav } from '@angular/material';
+import { MatSidenav, MatSnackBar } from '@angular/material';
 
 @Component({
     selector: 'app-me-page',
@@ -11,7 +11,8 @@ export class AppMePageComponent implements OnInit {
     @ViewChild('sidenav') public sidenav: MatSidenav;
 
     constructor(
-        private sidenavService: SidenavService
+        private sidenavService: SidenavService,
+        public snackBar: MatSnackBar
     ) { }
 
     ngOnInit() {
@@ -19,6 +20,8 @@ export class AppMePageComponent implements OnInit {
     }
 
     onOpenEasteregg() {
-        console.log('yay');
+        this.snackBar.open('Localhost gaat niet werken eh :^)', 'Ugh das waar ook', {
+            panelClass: 'snackModal'
+        });
     }
 }

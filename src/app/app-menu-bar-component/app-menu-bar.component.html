@@ -19,77 +19,88 @@
       {{getIcon()}}
     </mat-icon>
   </button>
-  <mat-tab-group style="width: 98%;">
+  <mat-tab-group style="width: 98%;" [selectedIndex]="selectedIndex">
     <mat-tab>
       <ng-template mat-tab-label>
-        <a mat-tab-link routerLink="/home" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/home')">
+        <a mat-tab-link routerLink="/home" routerLinkActive="isActive('/projects/home')">
           Home
         </a>
       </ng-template>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <a mat-tab-link routerLink="/me" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/me')">
+        <a mat-tab-link routerLink="/me" routerLinkActive="isActive('/projects/me')">
           Ik
         </a>
       </ng-template>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <a mat-tab-link routerLink="/projects/digitalfootprint" [routerLinkActiveOptions]="{exact: true}"
-          routerLinkActive="isActive('/projects/digitalfootprint')">
+        <a mat-tab-link routerLink="/projects/digitalfootprint" routerLinkActive="isActive('/projects/digitalfootprint')">
           Digital Footprint
         </a>
       </ng-template>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <a mat-tab-link routerLink="/projects/adayinthelife" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/adayinthelife')">
+        <a mat-tab-link routerLink="/projects/adayinthelife" routerLinkActive="isActive('/projects/adayinthelife')">
           A day in the life
         </a>
       </ng-template>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <a mat-tab-link routerLink="/projects/nologo" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/nologo')">
+        <a mat-tab-link routerLink="/projects/nologo" [routerLinkActiveOptions]="{exact: false}" routerLinkActive="c-tabs__link--active">
           No logo
         </a>
       </ng-template>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <a mat-tab-link routerLink="/projects/bigdata" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/bigdata')">
+        <a mat-tab-link routerLink="/projects/bigdata" routerLinkActive="mat-tab-label-active">
           Big data
         </a>
       </ng-template>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <a mat-tab-link routerLink="/projects/wearetherobots" [routerLinkActiveOptions]="{exact: true}"
-          routerLinkActive="isActive('/projects/wearetherobots')">
+        <a mat-tab-link routerLink="/projects/wearetherobots" routerLinkActive="isActive('/projects/wearetherobots')">
           We are the robots
         </a>
       </ng-template>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <a mat-tab-link routerLink="/projects/userexperience" [routerLinkActiveOptions]="{exact: true}"
-          routerLinkActive="isActive('/projects/userexperience')">
+        <a mat-tab-link routerLink="/projects/userexperience" routerLinkActive="isActive('/projects/userexperience')">
           User experience
         </a>
       </ng-template>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <a mat-tab-link routerLink="/projects/portfolio" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/portfolio')">
+        <a mat-tab-link routerLink="/projects/portfolio" routerLinkActive="isActive('/projects/portfolio')">
           Portfolio
         </a>
       </ng-template>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <a mat-tab-link routerLink="/projects/portfolio" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="isActive('/projects/portfolio')">
-          Portfolio
+        <a mat-tab-link routerLink="/projects/frankenstein" routerLinkActive="isActive('/projects/frankenstein')">
+          Frankenstein
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/projects/prototyping" routerLinkActive="isActive('/projects/prototyping')">
+          Prototyping
+        </a>
+      </ng-template>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <a mat-tab-link routerLink="/projects/gamerealisation" routerLinkActive="isActive('/projects/gamerealisation')">
+          Game realisation
         </a>
       </ng-template>
     </mat-tab>

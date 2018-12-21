@@ -21,6 +21,10 @@ import { AppBigDataPageComponent } from './app-big-data-page-component/app-big-d
 import { AppWeAreTheRobotsPageComponent } from './app-we-are-the-robots-page-component/app-we-are-the-robots-page.component';
 import { AppUserExperiencePageComponent } from './app-user-experience-page-component/app-user-experience-page.component';
 import { AppPortfolioPageComponent } from './app-portfolio-page-component/app-portfolio-page.component';
+import { AppFrankensteinPageComponent } from './app-frankenstein-page-component/app-frankenstein-page.component';
+import { AppPrototypingPageComponent } from './app-prototyping-page-component/app-prototyping-page.component';
+import { AppGameRealisationPageComponent } from './app-game-realisation-page-component/app-game-realisation-page.component';
+import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material';
 
 
 
@@ -36,7 +40,10 @@ import { AppPortfolioPageComponent } from './app-portfolio-page-component/app-po
     AppBigDataPageComponent,
     AppWeAreTheRobotsPageComponent,
     AppUserExperiencePageComponent,
-    AppPortfolioPageComponent
+    AppPortfolioPageComponent,
+    AppFrankensteinPageComponent,
+    AppPrototypingPageComponent,
+    AppGameRealisationPageComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +53,8 @@ import { AppPortfolioPageComponent } from './app-portfolio-page-component/app-po
     FlexLayoutModule
   ],
   providers: [
-    SidenavService
+    SidenavService,
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 2500 } }
   ],
   bootstrap: [AppComponent]
 })
